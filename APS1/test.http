@@ -1,0 +1,34 @@
+GET http://localhost:8000/tasks/
+
+###
+POST http://127.0.0.1:8000/task/
+
+{
+  "description": "Tarefa 1",
+  "done": false
+}
+###
+
+PUT http://127.0.0.1:8000/task/2
+
+{
+  "description": "Nova descrição"
+}
+###
+
+PUT http://127.0.0.1:8000/task/done/3
+
+###
+
+PUT http://127.0.0.1:8000/task/undone/2
+
+###
+DELETE http://127.0.0.1:8000/task/2
+
+###
+GET http://127.0.0.1:8000/tasks/done/
+
+###
+GET http://127.0.0.1:8000/tasks/undone/
+
+###
